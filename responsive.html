@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive webpage</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+    <style>
+        #img1 {
+            display: block;
+            margin-left: 400px;
+            margin-right: 50px;
+            width: 25%;
+            height: 250px;
+        }
+
+        #img2 {
+            display: block;
+            margin-left: 400px;
+            margin-right: 50px;
+            width: 25%;
+            height: 250px;
+
+        }
+
+        #img3 {
+            display: block;
+            margin-left: 400px;
+            margin-right: 50px;
+            width: 45%;
+            height: 400px;
+
+        }
+
+        body {
+
+
+            padding: 20px;
+            margin: 0;
+        }
+
+        #f {
+            background-color: rgb(142, 235, 158);
+            color: brown;
+            font-family: Bahnschrift;
+        }
+
+        h7 {
+            font-family: Bahnschrift;
+
+        }
+
+        .add {
+
+            font-family: Bahnschrift;
+            text-align: center;
+            background-color: rgb(172, 225, 175);
+            font-weight: bolder;
+        }
+
+        h1 {
+            color: darkgreen;
+            font-family: Bahnschrift;
+        }
+
+        #last {
+            background-color: black;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top" style="color:aliceblue">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">ComputingNetwork</a>
+                <ul class="navbar-nav nav-pills me-auto mb-2 mb-lg-0 p-2  ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-targe="navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+
+        <br><br><br>
+        <h1 align="center" id="f">Cloud Computing</h1><br>
+        <img src="https://th.bing.com/th/id/OIP.-41R6nEbmkzzglihJy_CFQHaFE?w=232&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+            alt="" height="300" width="1440"><br><br>
+
+        <h1 id="home">Home</h1>
+        <p>
+            <h7>
+                <b>: </b><br>
+                In Simplest terms, cloud computing means storing and accessing the data and programs on remote servers
+                that are hosted on the internet instead of the computer’s hard drive or local server. Cloud computing is
+                also referred to as Internet-based computing. Cloud Computing Architecture: Cloud computing architecture
+                refers to the components and sub-components required for cloud computing. These components typically
+                refer to:
+
+                Front end(fat client, thin client)
+                Back-end platforms(servers, storage)
+                Cloud-based delivery and a network(Internet, Intranet, Intercloud).
+                .<br><br>
+                <img id="img1" src="https://media.geeksforgeeks.org/wp-content/uploads/Cloud-Computing-Diagram.png"
+                    alt="" height="200" width="300">
+                <br>
+                <b>Amazon Web Services(AWS):</b><br>
+                One of the most successful cloud-based businesses is Amazon Web Services(AWS), which is an
+                Infrastructure as a Service(Iaas) offering that pays rent for virtual computers on Amazon’s
+                infrastructure.<br> <br>
+                <b>Microsoft Azure Platform :</b><br>
+                Microsoft is creating the Azure platform which enables the .NET Framework Application to run over the
+                internet as an alternative platform for Microsoft developers. This is the classic Platform as a
+                Service(PaaS).<br> <br>
+
+                <img id="img2" src="data:image/jpeg;base64,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"
+                    alt="" height="200" width="300">
+
+                <br><br><br>Goole: <br> <br>
+                Google has built a worldwide network of datacenters to service its search engine. From this service,
+                Google has captured the world’s advertising revenue. By using that revenue, Google offers free software
+                to users based on infrastructure. This is called Software as a Service(SaaS)
+                <br> <br>
+                <b>ARP:</b><br>
+                ARP stands for Address Resolution Protocol.
+                It is used to convert an IP address to its corresponding physical address(i.e., MAC Address).
+                ARP is used by the Data Link Layer to identify the MAC address of the Receiver’s machine.<br><br>
+
+                <b> RARP:</b><br>
+                RARP stands for Reverse Address Resolution Protocol.
+                As the name suggests, it provides the IP address of the device given a physical address as input. But
+                RARP has become obsolete since the time DHCP has come into the picture.<br>
+
+                This article is contributed by Kundana Thiyari. If you like GeeksforGeeks and would like to contribute,
+                you can also write an article using write.geeksforgeeks.org or mail your article to
+                review-team@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other
+                Geeks.<br>
+
+                Please write comments if you find anything incorrect, or you want to share more information about the
+                topic discussed above.<br>
+            </h7>
+
+
+
+        </p>
+
+        <h1 id="about">About Us</h1><br>
+        <p>
+            <img id="img3" src="https://th.bing.com/th/id/OIP.YEKs7cNb6uuli5iju5AfxQHaCQ?w=286&h=106&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                alt=""><br><br>
+            <h7>A computer network is a set of computers sharing resources located on or provided by network nodes. The
+                computers use common communication protocols over digital interconnections to communicate with each
+                other. These interconnections are made up of telecommunication network technologies, based on physically
+                wired, optical, and wireless radio-frequency methods that may be arranged in a variety of network
+                topologies.<br><br>
+
+                The nodes of a computer network can include personal computers, servers, networking hardware, or other
+                specialised or general-purpose hosts. They are identified by network addresses, and may have hostnames.
+                Hostnames serve as memorable labels for the nodes, rarely changed after initial assignment. Network
+                addresses serve for locating and identifying the nodes by communication protocols such as the Internet
+                Protocol.
+
+                Computer networks may be classified by many criteria, including the transmission medium used to carry
+                signals, bandwidth, communications protocols to organize network traffic, the network size, the
+                topology, traffic control mechanism, and organizational intent.<br>
+
+                Computer networks support many applications and services, such as access to the World Wide Web, digital
+                video, digital audio, shared use of application and storage servers, printers, and fax machines, and use
+                of email and instant messaging applications.</h7>
+
+        </p>
+
+    </div>
+    <div class="add"><br>
+        <h9>NetworkComputing Private limited<br> L82, Sector XI, 9th B Main Rd,<br> LIC Colony, Jeevan Bima
+            Nagar,<br>Bengaluru, Karnataka 560075<br></h9>
+    </div>
+    <br>
+
+    <div id="last">
+        <h11>NetworkComputing</h11>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
